@@ -1,0 +1,47 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.container{
+  margin: 0px auto;
+  width: 1000px;
+  height: 2000px;
+}
+.top-menu{
+  width: 1000px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+}
+.content-main .left-menu{
+  float:left;
+  width: 150px;
+  height: 1200px;
+}
+.content-main .right-menu{
+  float:right;
+  width: 150px;
+  height: 1200px;
+  background-image: "../../images/kiwi/1.jpg";
+}
+.content-main .center{
+  float:left;
+  width: 700px;
+  height: 1200px;
+  background-color: rgb(74, 55, 105);
+}
+.content-main .center .center1{background-color: red}
+.content-main .center .center2{background-color: yellow}
+.content-main .center .center3{background-color:}
+.content-main .center .center4{background-color:}
+.article{
+  clear:both;
+  width: 1000px;
+  height: 300px;
+  background-color: rgb(161, 168, 53);
+  
+}
+.toptxt{
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

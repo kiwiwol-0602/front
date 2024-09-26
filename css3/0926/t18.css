@@ -1,0 +1,28 @@
+/*t18.css*/
+body{
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.container{
+  display: grid;
+  /* grid-template-columns: auto auto auto; */
+  grid-template-columns: 180px auto 150px;
+  grid-template-rows: 180px auto 150px;
+}
+
+.item{
+  padding: 10px;
+  text-align: center;
+}
+
+.item1 {background-color: aliceblue;}
+.item2 {background-color: aqua;}
+.item3 {background-color: black;}
+.item4 {background-color: blue;}
+.item5 {background-color: blueviolet;}
+.item6 {background-color: brown;}
+.item7 {background-color: burlywood;}
+.item8 {background-color: cadetblue;}
+.item9 {background-color: chocolate;}
+.item10 {background-color: chartreuse;}
