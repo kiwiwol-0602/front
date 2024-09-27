@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>t15_animation5.html</title>
+  <title>t15_animation4.html</title>
   <style>
-  div{
-    width: 100px;
-    height: 50px;
-    background-color: red;
-    position: relative;
-    animation: horse 5s;
-    animation-fill-mode: forwards;
-  }
-  #horse1 {animation-timing-function: linear;}
-  #horse2 {animation-timing-function: ease;}
-  #horse3 {animation-timing-function: ease-in;}
-  #horse4 {animation-timing-function: ease-out;}
-  #horse5 {animation-timing-function: ease-in-out;}
+    div {
+      width: 100px;
+      height: 50px;
+      background-color: red;
+      position: relative;
+      animation: horse 5s;
+      animation-fill-mode: forwards;
+    }
 
-  @keyframes horse {
-    from{background-color: red; left: 0px;}
-      to{background-color: yellow; left: 300px;}
-  }
+    #horse1 {animation-timing-function: linear;}
+    #horse2 {animation-timing-function: ease;}
+    #horse3 {animation-timing-function: ease-in;}
+    #horse4 {animation-timing-function: ease-out;}
+    #horse5 {animation-timing-function: ease-in-out;}
+
+    @keyframes horse {
+      from {left: 0px;}
+      to {left: 300px;}
+    }
   </style>
 </head>
 <body>

@@ -1,20 +1,20 @@
-/*t17.css*/
-body{
+/* t17.css */
+body {
   margin: 0px;
   padding: 0px;
   font-size: 0.8em;
-
 }
 
-.container{
+.container {
   background-color: #eee;
   height: 100vh;
   display: flex;
 
-  /* flex-direction: row; 기본(행 기준) */
+  /* flex-direction: row;  기본(행 기준) */
   /* flex-direction: column; */
-  /* flex-direction: column-reverse;  */
-  /* flex-direction: row-reverse;  */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column-reverse; */
+
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -28,10 +28,8 @@ body{
   /* align-items: baseline; */
   /* align-items: center; */
   align-items: end;
-  
-
-
 }
+
 .item {
   width: 70px;
   height: 70px;
@@ -39,18 +37,18 @@ body{
   text-align: center;
 }
 
-.item2{
+.item2 {
   width: 150px;
   height: 150px;
 }
 
-.item1 {background-color: aliceblue;}
+.item1 {background-color: antiquewhite;}
 .item2 {background-color: aqua;}
-.item3 {background-color: black;}
-.item4 {background-color: blue;}
-.item5 {background-color: blueviolet;}
-.item6 {background-color: brown;}
-.item7 {background-color: burlywood;}
-.item8 {background-color: cadetblue;}
+.item3 {background-color: blue;}
+.item4 {background-color: blueviolet;}
+.item5 {background-color: brown;}
+.item6 {background-color: burlywood;}
+.item7 {background-color: cadetblue;}
+.item8 {background-color: chartreuse;}
 .item9 {background-color: chocolate;}
-.item10 {background-color: chartreuse;}
+.item10 {background-color: cornflowerblue;}

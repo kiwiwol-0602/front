@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>t20_MediaQuery</title>
+  <rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <style>
+    body{
+      margin: 0px;
+      padding: 0px;
+    }
+    .container{
+      width: 1000px;
+      margin: 0 auto;
+      font-size: 1.5em;
+      background-color: #eee;
+      border: 2px solid gray;
+      font-family: "Jua", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .txt{
+      margin-left: 20px;
+    }
+    div#area{
+      width: 960px;
+      height: 350px;
+      margin: 0 auto;
+      /* background-color: blueviolet; */
+      animation: logo;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes logo {
+      0% {background-image: url(../../images/kiwi/1.jpg)}
+      25% {background-image: url(../../images/kiwi/2.jpg);}
+      50% {background-image: url(../../images/kiwi/3.png);}
+      75% {background-image: url(../../images/kiwi/4.jpg);}
+      100% {background-image: url(../../images/kiwi/5.jpeg);}
+    }
+    #tbl{
+      width: 960px;
+      height: 450px;
+      margin: 0 auto;
+      background-color: aliceblue;
+      border-collapse: collapse;
+    }
+    th, td{
+      border: 1px solid #bbb;
+      text-align: center;
+    }
+    div#img {text-align: center;}
+    div#img img{
+      margin: 10px 0px;
+      padding: 15px 0px;
+      width: 1000px;
+      /* text-align: center; */
+      /* overflow: hidden; */
+    }
+    /*미디어 쿼리*/
+    /*screen width>= 1024px (max-width < 1024px == max-width:1024px)*/
+    @media screen and (max-width:1024px){
+      .container{
+        width: 700px;
+        margin: 0 auto;
+        font-size: 1em;
+        background-color: #eee;
+        border: 2px solid gray;
+      }
+      div#area{
+        width: 680px;
+        height: 400px;
+        margin: 0 auto;
+        /* background-color: chocolate; */
+        animation: logo;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes logo {
+        0% {background-image: url(../../images/kiwi/1.jpg)}
+        25% {background-image: url(../../images/kiwi/2.jpg);}
+        50% {background-image: url(../../images/kiwi/3.png);}
+        75% {background-image: url(../../images/kiwi/4.jpg);}
+        100% {background-image: url(../../images/kiwi/5.jpeg);}
+      }
+      #tbl{
+        width: 680px;
+        height: 250px;
+        margin: 0 auto;
+        background-color: aliceblue;
+        border-collapse: collapse;
+      }
+      /* div#img {text-align: center;} */
+      div#img img{
+        width: 680px;
+        /* overflow: hidden; */
+      }
+    }
+      @media screen and (max-width:400px){
+      .container{
+        width: 260px;
+        margin: 0 auto;
+        font-size: 0.7em;
+        background-color: #eee;
+        border: 1px solid gray;
+      }
+      div#area{
+        width: 260px;
+        height: 100px;
+        margin: 0 auto;
+        background-color: rgb(221, 106, 183);
+        animation: logo;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+      }
+      #tbl{
+        width: 260px;
+        height: 120px;
+        margin: 0 auto;
+        background-color: aliceblue;
+        border-collapse: collapse;
+      }
+      div#img img{
+        width: 260px;
+        /* overflow: hidden; */
+      }
+      @keyframes logo {
+        0% {background-color: red;}
+        25% {background-color: yellow;}
+        50% {background-color: green;}
+        75% {background-color: blue;}
+        100% {background-color: red;}
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="txt">미디어쿼리 연습 55번 소연</h2>
+    <p class="txt">(반응형 웹 사이트 : Responsive Web Design)</p>
+    <hr/>
+    <ul>
+      <li>데스크탑 : 1024px(1200px) 이상</li>
+      <li>태블릿 : 768px(992px)~데스크탑</li>
+      <li>모바일 : 768px이하(576px)</li>
+    </ul>
+    <hr/>
+    <div class="txt">이곳은 반응형 웹사이트를 위한 화면 입니다.</div>
+    <hr/>
+    <div id="area"></div>
+    <hr/>
+    <table id="tbl">
+      <tr>
+        <th>주제</th>
+        <th>강사</th>
+        <th>장소</th>
+      </tr>
+      <tr>
+        <td>웹 표준에 대하여</td>
+        <td>홍길동</td>
+        <td>그린아카데미</td>
+      </tr>
+      <tr>
+        <td>Java 프로그래밍</td>
+        <td>김영민</td>
+        <td>그린 402호</td>
+      </tr>
+    </table>
+    <hr/>
+    <div id="img">
+      <img src="../../images/11.jpg"/>
+    </div>
+
+    
+  </div>
+</body>
+</html>
