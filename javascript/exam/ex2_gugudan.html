@@ -12,33 +12,34 @@
     'use strict'
 
     function gugudan() {
-      let startDan = document.getElementById("startDan").value;
-      let endDan = document.getElementById("endDan").value;
-      let row = document.getElementById("row").value;
+      let startDan = Number(document.getElementById("startDan").value); // 시작단의 값을 받아옴, 숫자(Number)로 변환
+      let endDan = Number(document.getElementById("endDan").value); //끝단의 값을 받아옴, 숫자로 변환  
+      let row = Number(document.getElementById("row").value); //한줄에 몇개?
 
       if(startDan.trim() == "" || endDan.trim() == "" || row.trim() == ""){
-          alert("시작단과 끝단, 출력열 개수를 입력하세요.");
-          document.getElementById(startDan).focus();
-          return false;
+        alert("시작단과 끝단, 출력열 개수를 입력하세요.");
+        document.getElementById(startDan).focus();
+        return false;
       }
-
+      
       let imsi=0;
       if(startDan>endDan){
         imsi = startDan;
         startDan = endDan;
         endDan = imsi;
       }
-
-      let temp =`<table class="table table-bordered test-center"><tr>`;
-      let td=0;
-      for(let i = startDan; i <=endDan; i++){
-        temp += `<td> ◆ ${i} 단 ◆ <br/>`;
+      
+      let no=0; // 몇번 돌았니?
+      let temp = ' ';
+      temp +=`<table class="table table-bordered test-center"><tr>`;
+      for(let i = startDan; i <=endDan; i++){ //시작단부터 끝단까지 반복
+        temp += `<td><b> ◆ ${i} 단 ◆ </b><br/>`; 
         for(let j=1; j<=9; j++){
           temp += `${i} * ${j} = ${i*j}<br/>`; 
         }
         temp += "</td>";
-        td++
-        if(td % row == 0){
+        no++;
+        if(no % row == 0){
           temp += '</tr><tr>';
         }
       }
