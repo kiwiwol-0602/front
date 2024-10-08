@@ -49,6 +49,7 @@ res += ++cnt + ":" + text2.replace('ABC', 'opq') + "<br/>";
 res += ++cnt + ":" + text2.replaceAll('ABC', 'opq') + "<br/>";
 res += ++cnt + ":" + text1.slice(5) + "<br/>";
 res += ++cnt + ":" + text1.slice(5, 8) + "<br/>";
+res += ++cnt + ":" + text1.slice(-2) + "<br/>"; // 뒤에서부터 값을 가져옴
 res += ++cnt + ":" + text1.split('ABC')[0] + "<br/>";
 res += ++cnt + ":" + text1.split('ABC')[1] + "<br/>";
 res += ++cnt + ":" + text4.split('-')[0] + "<br/>";
